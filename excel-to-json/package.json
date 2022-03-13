@@ -1,0 +1,15 @@
+{
+  "name": "excel-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node util.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xls-to-json": "^2.1.0"
+  }
+}

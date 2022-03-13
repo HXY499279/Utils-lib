@@ -1,6 +1,3 @@
-/* 
-    引入该组件可以生成彩带背景，以用于登陆界面美化
-*/
 import React, { useEffect } from 'react'
 
 export default function BG() {
@@ -24,7 +21,7 @@ export default function BG() {
                 }
                 return 0;
             };
-            var screenInfo = function (e) {
+            var screenInfo = function () {
                 var width = Math.max(0, _w.innerWidth || _d.clientWidth || _b.clientWidth || 0),
                     height = Math.max(0, _w.innerHeight || _d.clientHeight || _b.clientHeight || 0),
                     scrollx = Math.max(0, _w.pageXOffset || _d.scrollLeft || _b.scrollLeft || 0) - (_d.clientLeft || 0),
@@ -37,16 +34,6 @@ export default function BG() {
                     centery: height / 2,
                     scrollx: scrollx,
                     scrolly: scrolly
-                };
-            };
-            var mouseInfo = function (e) {
-                var screen = screenInfo(e), mousex = e ? Math.max(0, e.pageX || e.clientX || 0) : 0,
-                    mousey = e ? Math.max(0, e.pageY || e.clientY || 0) : 0;
-                return {
-                    mousex: mousex,
-                    mousey: mousey,
-                    centerx: mousex - screen.width / 2,
-                    centery: mousey - screen.height / 2
                 };
             };
             var Point = function (x, y) {
@@ -122,7 +109,7 @@ export default function BG() {
                 constructor: Factory, setOptions: function (options) {
                     if (typeof options === "object") {
                         for (var key in options) {
-                            if (options.hasOwnProperty(key)) {
+                            if (Object.prototype.hasOwnProperty.call(options, key)) {
                                 this._options[key] = options[key];
                             }
                         }
@@ -171,7 +158,8 @@ export default function BG() {
                     }
                     var ribbon = [], point1 = new Point(startx, starty), point2 = new Point(startx, starty), point3 = null,
                         color = Math.round(random(0, 360)), delay = 0;
-                    while (true) {
+                    let T = true
+                    while (T) {
                         if (stop <= 0) break;
                         stop--;
                         movex = Math.round((Math.random() * 1 - 0.2) * this._options.horizontalSpeed);
@@ -292,9 +280,12 @@ export default function BG() {
         });
         new window.Ribbons();
         return () => {
+            // 组件卸载删除背景组件
+            const bgCanvas = document.getElementById("bgCanvas")
+            bgCanvas.parentNode.removeChild(bgCanvas)
             delete window.Ribbons
         }
-    }, [])
+    })
     return (
         <></>
     )

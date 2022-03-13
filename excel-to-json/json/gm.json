@@ -1,0 +1,57 @@
+
+  {
+    "merchantId": "oDnrr5HzosQT28PSY7M3f5InlkXQ",
+    "name": "沙糖桔苗",
+    "type": "柑橘苗",
+    "age": "两年",
+    "location": "四川省成都市双流区",
+    "growth": "健康，根系发达",
+    "ripeTime": "9月下旬",
+    "pluckTime": "10月下旬-11月上旬",
+    "amount": "100-150斤",
+    "setRate": "6%",
+    "alivrRate": "95%",
+    "turnover": "16000"
+  }
+  {
+    "merchantId": "oDnrr5HzosQT28PSY7M3f5InlkXQ",
+    "name": "水蜜桃苗",
+    "type": "桃树苗",
+    "age": "一年",
+    "location": "湖南省永州市祁阳市",
+    "growth": "茎秆粗壮，根系好",
+    "ripeTime": "8月上中旬",
+    "pluckTime": "8月上中旬-9月下中旬",
+    "amount": "50-70斤",
+    "setRate": "50%",
+    "alivrRate": "90%",
+    "turnover": "39000"
+  }
+  {
+    "merchantId": "oDnrr5HzosQT28PSY7M3f5InlkXQ",
+    "name": "无核荔枝苗",
+    "type": "荔枝苗",
+    "age": "两年",
+    "location": "广西壮族自治县钦州市灵山县",
+    "growth": "果肉清甜，根系发达",
+    "ripeTime": "六月中下旬",
+    "pluckTime": "六月中下旬-7月中下旬",
+    "amount": "60斤左右",
+    "setRate": "55%",
+    "alivrRate": ">=90%",
+    "turnover": "98000"
+  }
+  {
+    "merchantId": "oDnrr5HzosQT28PSY7M3f5InlkXQ",
+    "name": "阳光玫瑰葡萄苗",
+    "type": "葡萄苗",
+    "age": "一年",
+    "location": "辽宁省营口市鲅鱼圈区",
+    "growth": "正健康地茁壮生长着",
+    "ripeTime": "10月",
+    "pluckTime": "10月上旬-11月上旬",
+    "amount": "30斤左右",
+    "setRate": "72%",
+    "alivrRate": "93%",
+    "turnover": "4493"
+  }
